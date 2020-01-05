@@ -1,7 +1,6 @@
 package com.springbootmybatisplus.demo.model.dto;
 
 import io.swagger.annotations.ApiModelProperty;
-import io.swagger.models.auth.In;
 import lombok.Data;
 
 /**

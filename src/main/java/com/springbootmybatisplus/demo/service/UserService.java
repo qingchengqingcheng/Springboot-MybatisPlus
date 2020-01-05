@@ -2,8 +2,6 @@ package com.springbootmybatisplus.demo.service;
 
 import com.springbootmybatisplus.demo.model.dto.UserDto;
 import com.springbootmybatisplus.demo.model.po.User;
-import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
