@@ -1,0 +1,31 @@
+server:
+  port: 8089
+  servlet:
+    context-path: /plus
+spring:
+  application:
+    name: dp-auth
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf8&autoReconnect=true&serverTimezone=GMT%2B8
+    username: root
+    password: root
+    driver-class: com.mysql.cj.jdbc.Driver
+    name: datasource
+    druid:
+      initial-size: 10
+      max-active: 100
+      max-wait: 60000
+      min-idle: 10
+      validation-query: SELECT 1
+      test-on-borrow: false
+      test-on-return: false
+      min-evictable-idle-time-millis: 300000
+      test-while-idle: true
+      time-between-eviction-runs-millis: 30000
+      max-pool-prepared-statement-per-connection-size: 20
+      pool-prepared-statements: true
+      max-open-prepared-statements: 20
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.springbootmybatisplus.demo.model.po
