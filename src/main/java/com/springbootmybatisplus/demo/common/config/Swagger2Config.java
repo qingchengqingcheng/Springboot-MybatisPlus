@@ -33,7 +33,7 @@ public class Swagger2Config {
 
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
-                .title( "MyBatis测试在线接口文档" )
+                .title( "MyBatisPlus测试在线接口文档" )
                 .version( "1.0" )
                 .build();
     }
